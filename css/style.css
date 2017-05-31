@@ -1,0 +1,620 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.wrapper{
+    width: 100%;
+    
+}
+
+
+.videodiv {
+ 
+  width: 100%;
+  height: 900px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+  overflow: hidden;
+  min-width: 1205px;  
+  cursor: crosshair;  
+}
+
+
+
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+.leftmenu{
+    width: 300px;
+    height: 600px;
+/*    background: #359;*/
+    float: left;
+}
+
+.rightmenu{
+    width: 300px;
+    height: 600px;
+    
+    float: right;
+    
+    
+}
+.inmenu{
+    width: 200px;
+    height: 140px;
+    margin: auto;
+    
+/*    cursor: pointer;*/
+}
+.inmenu a{
+    display: block;
+    height: 100%;
+}
+.menu_main{
+    background: url(../images/main.png);
+    animation: main_a  3s infinite ;
+}
+@keyframes main_a {
+    
+    0% {margin-right: 10px;}
+    50% {margin-right: 30px;}
+    100% {margin-right: 10px;}
+    
+    }
+.menu_sale{
+    background: url(../images/sale.png);
+    animation: sale_a  .1s infinite step-end;
+}
+@keyframes sale_a {
+    from {background-position: 0 0%;}
+    10% {background-position: 0 10%;}
+    20% {background-position: 0 19%;}
+    40% {background-position: 0 23%;}
+    50% {background-position: 0 23%;}    
+    70% {background-position: 0 19%;}
+    90% {background-position: 0 10%;}
+    to {background-position: 0 0%;}
+    }
+.menu_photo{
+    background: url(../images/photo.png);
+    transition: 1s;
+}
+.menu_photo:hover{
+    transform: scale(1.4);
+}
+.menu_price{
+    background: url(../images/price.png);
+    transition: .5s;
+}
+.menu_price:hover{
+    transform: scale(.7);
+}
+.menu_about{
+    background: url(../images/about.png);
+    animation: about_a  2s infinite;
+   
+}
+@keyframes about_a {
+    
+    0% {transform: rotate(0deg)}
+    50% {transform: rotate(12deg)}
+    100% {transform: rotate(0deg)}
+    
+    }
+.header{
+    width: 590px;
+    height: 250px;
+    background: url(../images/header2.png);
+    margin:20px auto;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+/*    border: 1px solid black;*/
+    animation: shadow  1s infinite step-end;
+    
+    
+    }
+    @keyframes shadow {
+    from {background-position: 0 0%;}
+    10% {background-position: 0 33%;}
+    20% {background-position: 0 66%;}
+    40% {background-position: 0 99%;}
+    50% {background-position: 0 99%;}    
+    70% {background-position: 0 66%;}
+    90% {background-position: 0 33%;}
+    to {background-position: 0 0%;}
+    }
+
+.two    {
+    width: 100%;
+    height: 600px;
+    background: url(../images/texture.png);
+    position: relative;
+}
+.star{
+    height: 90px;
+    width: 90px;
+    animation: star_a  .7s infinite step-end;
+    position: absolute;
+    
+}
+.star_a{
+    background: url(../images/starA.png);
+    top:20px;
+    left: 100px;
+}
+.star_b{
+    background: url(../images/starB.png);
+    top:50px;
+    right: 190px;
+}
+.star_c{
+    background: url(../images/starC.png);
+    top:290px;
+    right: 70px;
+}
+    @keyframes star_a {
+    from {background-position: 0 0%;}
+    10% {background-position: 99% 0;}    
+    20% {background-position: 99% 0;}
+    30% {background-position: 99% 0;}
+    40% {background-position: 0 99%;}
+    50% {background-position: 0 99%;}
+    60% {background-position: 0 99%;}    
+    70% {background-position: 99% 0%;}    
+    80% {background-position: 99% 0%;}
+    90% {background-position: 99% 0%;}    
+    to {background-position: 0 0%;}
+    }
+
+.vagina{
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    top:80px;
+/*    border:1px solid black;*/
+}
+.vagina_img{
+    width: 290px;
+    height: 340px;
+    background: url(../images/vagina2.png);
+    display: inline-block;
+    vertical-align: top;
+    animation: vagina_a .2s infinite step-end;
+    
+}
+@keyframes vagina_a {
+    from {background-position: 0 0%;}
+    35% {background-position: 0 102.5%;}    
+    75% {background-position: 0 102.5%;}
+       
+    to {background-position: 0 0%;}
+    }
+.vagina_txt{
+    padding: 40px;
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+}
+.vagina_txt p{
+    font-family: 'Underdog', cursive;
+    font-size: 22px;
+}
+.action{
+    text-align: center;
+}
+.action_text{
+    text-align:justify;
+}
+.three{
+    width: 100%;
+    height: 800px;
+    background: url(../images/wbg.jpg);
+    cursor: crosshair;
+    
+}
+.woman{
+    width: 600px;
+    height: 640px;
+    margin: auto;
+    position: relative;
+    top:40px;
+    overflow: hidden;
+    background: url(../images/glow.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    animation: woman_a .2s infinite step-end;
+}
+.woman p {
+    font-family: 'Underdog', cursive;
+    display: table;
+    margin-left: 160px;
+    position: relative;
+    animation: wp_a 2s infinite ;
+    
+}
+
+@keyframes wp_a {
+    0% {bottom: 10px}  
+    50% {bottom: 90px} 
+    100% {bottom: 10px} 
+
+    }
+
+.girl{
+    width: 190px;
+    height: 610px;
+    position: relative;
+    top:50px;
+    margin: auto;
+    background: url(../images/girl.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+@keyframes woman_a {
+    
+    0% {background-position: 0 0;}
+    50% {background-position: 0 100%;}
+    100% {background-position: 0 0;}
+    }
+.tattoo{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    cursor: move;
+    
+    
+}
+.tattoo:nth-child(2n){
+    right:400px;
+}
+.tattoo:nth-child(odd){
+    right:-400px;
+}
+.tattoo1{
+    background: url(../images/tattoo1.png) no-repeat;
+    background-size: cover;
+    height: 16px;
+    width: 26px;
+}
+.tattoo2{
+    background: url(../images/tattoo2.png) no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 23px;
+}
+.tattoo3{
+    background: url(../images/tattoo3.png) no-repeat;
+    
+    background-size: cover;
+        height: 73px;
+    width: 49.9915px;
+}
+.tattoo4{
+    background: url(../images/tattoo4.png) no-repeat;
+    background-size: contain;
+    width: 80px;
+}
+.tattoo5{
+    background: url(../images/tattoo5.png) no-repeat;
+    background-size: cover;
+    height: 77px;
+    width: 21px;
+}
+.tattoo6{
+    background: url(../images/tattoo6.png) no-repeat;
+    background-size: cover;
+    width: 27.9801px;
+    height: 79.9972px;
+}
+
+.four{
+    width: 100%;
+    height: 700px;
+    background: url(../images/texture.png);
+    display: table;
+}
+.cradle{
+    width: 400px;
+    height: 110px;
+    background: url(../images/cradle2.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    bottom: 38px;
+    animation: cradle_a .2s infinite step-end;
+}
+@keyframes cradle_a {
+    
+    0% {background-position: 0 0;}
+    50% {background-position: 0 50%;}
+    100% {background-position: 0 100%;}
+    }
+.gallary{
+    width: 80%;
+    display: table;
+    margin: auto;
+    position: relative;
+/*    top:90px;*/
+    left: 90px;
+}
+
+.four-two{
+    width: 100%;
+    height: 400px;
+    background: url(../images/wbg-black.jpg);
+    display: table;
+}
+.pic2{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 50px 20px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+}
+.pic2:first-child{
+    margin-left: 32px;
+}
+.pic2 a{
+    display: none;
+}
+
+.five{
+    width: 100%;
+    height: 540px;
+    background: url(../images/paper.jpg);
+    position: relative;
+}
+.tattoo-anima{
+    width: 200px;
+    height: 260px;
+    position: absolute;
+    right: 50px;
+    top:150px;
+    background: url(../images/tattoo-anima.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    animation: tattoo-anima_a .2s infinite step-end;
+}
+
+@keyframes tattoo-anima_a {
+    
+    0% {background-position: 0 0;}
+    50% {background-position: 0 100.5%;}
+    100% {background-position: 0 0;}
+    }
+
+.line  {
+    width: 160px;
+    height: 60px;
+    background: url(../images/ribbon.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top:20px;
+    left:100px;
+    animation: line_a 2s infinite step-end;
+}
+@keyframes line_a {
+    0% {background-position: 0 0;}    
+    7% {background-position: 0 14;}
+    
+    100% {background-position: 0 0;}
+    }
+.price{
+    width: 50%;
+    min-width: 400px;
+    background: rgba(10, 9, 9, 0.28);
+    border-radius: 10px;
+    padding: 50px 30px;
+    position: relative;
+    top:100px;
+    transform: rotate(15deg);
+    margin: auto;
+    transition: 1s;
+}
+/*
+.five:hover .price{
+    transform: rotate(0deg);
+    top:150px;
+}
+*/
+.price_p{
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Underdog', cursive;
+}
+.six{
+    width: 100%;
+    height: 540px;
+    display: table;
+    position: relative;
+}
+.gol{
+    width: 30px;
+    height: 30px;
+    background: url(../images/gol.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+}    
+.gol1{
+    top: 10px;
+    right: 10px;
+}
+.gol2{
+    top: 10px;
+    left: 10px;
+}
+.gol3{
+    bottom: 10px;
+    right: 10px;
+}
+.gol4{
+    bottom: 10px;
+    left: 10px;
+}
+.gol_aa{
+    animation: gol_a 2s infinite linear ;
+    
+}
+@keyframes gol_a {
+    
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(260deg);}
+    100% {transform: rotate(360deg);}
+    }
+
+.six_text{
+    width: 50%;
+    min-width: 400px;
+    font-family: 'Underdog', cursive;
+    background: rgba(10, 9, 9, 0.28);
+    border-radius: 10px;
+    padding: 50px 30px;
+    
+    
+    margin: auto;
+    position: relative;
+    bottom:50px;
+    font-size: 22px;
+    
+}
+.six_text p{
+    font-family: 'Underdog', cursive;
+    text-align:justify;
+}
+.six .star_b {
+    right: 250px;
+    top:290px;
+}
+.six_map{
+    height: 450px;
+}
+.how{
+    text-align: center;
+}
+.six .star_b {
+    left: 150px;
+    top:170px;
+}
+.arrow{
+    width: 400px;
+    height: 400px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    background: url(../images/bone.png) no-repeat;
+    top:120px;
+    right: 560px;
+    transform: rotate(15deg);
+    animation: arrow_a 3s infinite ;
+}
+@keyframes arrow_a {
+    
+    0% {transform: rotate(20deg)}
+    50% {transform: rotate(-50deg)}
+    100% {transform: rotate(20deg)}
+    }
+.footer{
+    width: 99%;
+    margin: auto;
+    padding: 5px;
+    background: rgba(65, 33, 33, 0.4);
+    border-radius: 5px 5px 0 0;
+}
+.footer a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin: auto;
+}
+.footer a:active{
+    color:#000;
+}
+.footer a:visited{
+    color:#333;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .wrapper{
+        overflow-x: hidden;
+    }
+    video {
+        display: none;
+    }
+    .rightmenu, .leftmenu{
+        float: none;
+        height: 400px;
+        margin: auto;
+    }
+    .header {
+        display: none;
+    }
+    .videodiv{
+        display: table;
+        min-width: 400px;
+    }
+    .three{
+        
+    }
+    .vagina{
+        display: table;
+        width: 100%;
+        top:0;
+    }
+    .vagina_img, .vagina_txt{
+        display: block;
+        width: 80%;
+        margin: auto;
+        background-repeat: no-repeat;
+    }
+    .woman{
+        width: 100%;
+        background: url(../images/glow2.png);
+        background-repeat: no-repeat;
+    }
+    .cradle {
+        right: 40px;
+    }
+    .gallary{
+        left: 20px;
+    }
+    .pic2{
+        float: none;
+        margin:10px auto;
+    }
+    .pic2:first-child{
+        margin: auto;
+    }
+    .price{
+        min-width: 100px;
+        width: 85%;
+        margin: 70px auto 0;
+        display: table;
+    }
+    .six_text{
+        min-width: 100px;
+        width: 85%;
+    }
+}
